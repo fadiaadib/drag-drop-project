@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Project Manager</title>
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="style.css"/>
     <script src="dist/app.js" defer></script>
   </head>
+
   <body>
     <template id="project-input">
       <form>
@@ -26,9 +26,15 @@
         <button type="submit">ADD PROJECT</button>
       </form>
     </template>
+
     <template id="single-project">
-      <li></li>
+      <li draggable="true">
+        <h2></h2>
+        <h3></h3>
+        <p></p>
+      </li>
     </template>
+
     <template id="project-list">
       <section class="projects">
         <header>
@@ -37,6 +43,7 @@
         <ul></ul>
       </section>
     </template>
+    
     <div id="app"></div>
   </body>
 </html>
