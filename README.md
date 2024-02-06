@@ -18,7 +18,7 @@ Add this in `"scripts"` in the package.json: `"start": "lite-server"`
 
 ## tsc commands
 
-> tsc init
+> tsc --init
 >
 > tsc -w
 
